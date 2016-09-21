@@ -1,0 +1,12 @@
+[submodule "docker-letsencrypt-nginx-proxy-companion"]
+	path = docker-letsencrypt-nginx-proxy-companion
+	url = https://gitlab.ii.org.nz/ii/docker-letsencrypt-nginx-proxy-companion.git
+[submodule "docker-gen"]
+	path = docker-gen
+	url = https://gitlab.ii.org.nz/ii/docker-gen.git
+[submodule "nginx-proxy"]
+	path = nginx-proxy
+	url = https://gitlab.ii.org.nz/ii/nginx-proxy.git
+[submodule "docker-nginx"]
+	path = docker-nginx
+	url = https://gitlab.ii.org.nz/ii/docker-nginx.git
