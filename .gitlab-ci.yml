@@ -12,8 +12,8 @@ build:
   script:
   - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN docker.ii.org.nz
   - docker build -t docker.ii.org.nz/ii/encrypt-everything:nginx-proxy docker-nginx/mainline/jessie/
-  # - docker build -t docker.ii.org.nz/ii/mattermost-docker:app app/
-  # - docker build -t docker.ii.org.nz/ii/mattermost-docker:db db/
-  # - docker push docker.ii.org.nz/ii/mattermost-docker:web
-  # - docker push docker.ii.org.nz/ii/mattermost-docker:app
+  - docker build -t docker.ii.org.nz/ii/encrypt-everything:docker-gen docker-gen/
+  - docker build -t docker.ii.org.nz/ii/encrypt-everything:nginx-letsencrypt docker-letsencrypt-nginx-proxy-companion/
   - docker push docker.ii.org.nz/ii/encrypt-everything:nginx-proxy
+  - docker push docker.ii.org.nz/ii/encrypt-everything:docker-gen
+  - docker push docker.ii.org.nz/ii/encrypt-everything:nginx-letsencrypt
