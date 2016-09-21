@@ -3,6 +3,7 @@
 
 before_script:
 - docker info
+- git submodule update --init --recursive
 
 build:
   stage: build
